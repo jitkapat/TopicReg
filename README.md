@@ -1,5 +1,5 @@
 # TopicReg
-Implementation of [Topic-Regularized Authorship Representation Learning]](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.70/) (Proceedings of EMNLP2022) in Pytorch Lightning.
+The implementation of [Topic-Regularized Authorship Representation Learning]](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.70/) (Proceedings of EMNLP2022) in Pytorch Lightning.
 The code is primarily meant for performing experiments for research purposes, focusing on quick training and evaluation. It is not designed with deployment for downstream applications in mind.
 
 ## Installation
@@ -8,7 +8,7 @@ git clone https://github.com/jitkapat/TopicReg.git
 cd TopicReg
 pip install -e .
 ```
-##Datasets
+## Datasets
 The source datasets of the ones used in our experiments can be obtained as follows:
 
 - [Amazon](https://nijianmo.github.io/amazon/index.html)
