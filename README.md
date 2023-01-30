@@ -1,5 +1,5 @@
 # TopicReg
-The implementation of [Topic-Regularized Authorship Representation Learning]](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.70/) (Proceedings of EMNLP2022) in Pytorch Lightning.
+The implementation of [Topic-Regularized Authorship Representation Learning](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.70/) (Proceedings of EMNLP2022) in Pytorch Lightning.
 The code is primarily meant for performing experiments for research purposes, focusing on quick training and evaluation. It is not designed with deployment for downstream applications in mind.
 
 ## Installation
@@ -20,6 +20,7 @@ Our code assume that the path containing the dataset are comprised of following 
 - val.csv
 - test1.csv (cross-topic test set)
 - OOD_A.csv (in-distribution topic test set, optional)
+  
 Our training scripts also assume that each file in each dataset have been preprocessed into .csv format with [text, author, topic] columns.
 
 ## Usage
@@ -41,7 +42,7 @@ python train_scripts/train_contrastive.py   --dataset $data_path \
 
 Then we perform another step of ARR with the above model as the base model.
 ```
-python train_scripts/train_conf_reg.py  --dataset $DATA_PATH \
+python train_scripts/train_conf_reg.py  --dataset $data_path \
                                         --model $model_path \
                                         --model_checkpoint $save_path
                                         --save_path $save_path2 \
